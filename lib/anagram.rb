@@ -1,6 +1,13 @@
 # Your code goes here!
 class Anagram
-   def initialize
-     
+  attr_reader :word
+  
+   def initialize(word)
+     @word = word
+    end 
+    
+    def match(list)
+      list.select do |words|
+        if words.split("").sort == @word.split("").sort
     end 
 end 
